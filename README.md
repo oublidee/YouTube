@@ -1,4 +1,4 @@
-# YouTube 1.0
+# YouTube 1.0.1
 
 YouTube est un outil YouTube pour macOS avec une interface sombre en français. **L’application tient dans un seul fichier : `index.php`.**
 
@@ -53,9 +53,9 @@ node --version
 
 YouTube détecte les outils dans les emplacements Homebrew habituels : `/opt/homebrew/bin` sur Apple Silicon et `/usr/local/bin` sur les Mac Intel.
 
-### 3. Télécharger YouTube 1.0
+### 3. Télécharger YouTube 1.0.1
 
-Ouvrez [le dépôt YouTube](https://github.com/oublidee/YouTube), puis choisissez **Code → Download ZIP** et décompressez l’archive. Cette archive contient le code actuel avec le nom YouTube.
+Ouvrez [la dernière version](https://github.com/oublidee/YouTube/releases/latest), puis téléchargez **youtube-v1.0.1.zip** dans la section **Assets** et décompressez l’archive. Elle contient l’application et le guide avec le nom YouTube. Vous pouvez aussi choisir **Code → Download ZIP** sur [le dépôt](https://github.com/oublidee/YouTube).
 
 Gardez `index.php` dans un dossier dédié. `README.md` contient ce guide et `.gitignore` sert uniquement au suivi Git : ces deux fichiers ne sont pas nécessaires pour lancer l’application.
 
@@ -88,7 +88,7 @@ Pour une vidéo publique, vous pouvez désactiver **Utiliser ma session YouTube 
 
 ## Versions et mises à jour
 
-La version **1.0** est le point de référence validé. Les versions publiées sont disponibles dans [Releases](https://github.com/oublidee/YouTube/releases). Les modifications du code sont visibles dans [l’historique des commits](https://github.com/oublidee/YouTube/commits/main/).
+La version **1.0.1** applique le nom YouTube au code et à la documentation, et devient le téléchargement principal. Le fonctionnement du téléchargement reste celui de la version 1.0. La syntaxe PHP/JavaScript et les transferts MP4/MP3 simulés ont été vérifiés ; aucun nouvel essai réel de téléchargement n’a été effectué pour ce changement de nom. Les versions publiées sont disponibles dans [Releases](https://github.com/oublidee/YouTube/releases). Les modifications du code sont visibles dans [l’historique des commits](https://github.com/oublidee/YouTube/commits/main/).
 
 ### Mettre à jour l’application
 
@@ -123,7 +123,7 @@ Pour récupérer les modifications de la branche principale, arrêtez YouTube, p
 git pull --ff-only
 ```
 
-La branche `main` peut contenir des changements plus récents qu’une version publiée. Pour une version précise, privilégiez le téléchargement dans **Releases**. Les anciennes archives conservent le code de leur date de publication ; pour obtenir le nom YouTube dans l’interface, téléchargez la branche `main` comme indiqué plus haut. Si vous avez modifié le code localement, sauvegardez vos changements avant de mettre à jour.
+La branche `main` peut contenir des changements plus récents qu’une version publiée. Pour une version précise, privilégiez le téléchargement dans **Releases**. Les anciennes archives conservent le code de leur date de publication ; pour obtenir le nom YouTube dans l’interface, téléchargez la version 1.0.1 ou une version ultérieure. Si vous avez modifié le code localement, sauvegardez vos changements avant de mettre à jour.
 
 ## Dépannage et sécurité
 

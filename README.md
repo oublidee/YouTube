@@ -1,8 +1,8 @@
-# NUIT 1.0
+# YouTube 1.0
 
-NUIT est un outil YouTube pour macOS avec une interface sombre en français. **L’application tient dans un seul fichier : `index.php`.**
+YouTube est un outil YouTube pour macOS avec une interface sombre en français. **L’application tient dans un seul fichier : `index.php`.**
 
-Ce dépôt public sert à partager le fichier, conserver les versions et distribuer les mises à jour. NUIT s’exécute sur votre Mac.
+Ce dépôt public sert à partager le fichier, conserver les versions et distribuer les mises à jour. YouTube s’exécute sur votre Mac.
 
 ## Fonctionnalités
 
@@ -51,15 +51,15 @@ yt-dlp --version
 node --version
 ```
 
-NUIT détecte les outils dans les emplacements Homebrew habituels : `/opt/homebrew/bin` sur Apple Silicon et `/usr/local/bin` sur les Mac Intel.
+YouTube détecte les outils dans les emplacements Homebrew habituels : `/opt/homebrew/bin` sur Apple Silicon et `/usr/local/bin` sur les Mac Intel.
 
-### 3. Télécharger NUIT 1.0
+### 3. Télécharger YouTube 1.0
 
-Ouvrez [la version 1.0](https://github.com/oublidee/nuit/releases/tag/v1.0), puis téléchargez **Source code (zip)** dans la section **Assets** et décompressez-le.
+Ouvrez [le dépôt YouTube](https://github.com/oublidee/YouTube), puis choisissez **Code → Download ZIP** et décompressez l’archive. Cette archive contient le code actuel avec le nom YouTube.
 
 Gardez `index.php` dans un dossier dédié. `README.md` contient ce guide et `.gitignore` sert uniquement au suivi Git : ces deux fichiers ne sont pas nécessaires pour lancer l’application.
 
-### 4. Lancer NUIT
+### 4. Lancer YouTube
 
 Dans Terminal, placez-vous dans le dossier contenant `index.php` : tapez `cd ` (avec un espace), glissez le dossier depuis le Finder dans Terminal, puis appuyez sur Entrée.
 
@@ -73,28 +73,28 @@ Gardez cette fenêtre Terminal ouverte. Dans **Brave**, ouvrez :
 
 **http://127.0.0.1:8787/**
 
-Il faut passer par cette adresse ; un double-clic sur le fichier PHP ne lance pas l’application. Pour arrêter NUIT, faites **Ctrl+C** dans Terminal. Pour le relancer, réexécutez la même commande.
+Il faut passer par cette adresse ; un double-clic sur le fichier PHP ne lance pas l’application. Pour arrêter YouTube, faites **Ctrl+C** dans Terminal. Pour le relancer, réexécutez la même commande.
 
 ## Utilisation
 
 1. Ouvrez YouTube dans Brave avec votre compte habituel.
-2. Copiez le lien de la vidéo et collez-le dans NUIT.
+2. Copiez le lien de la vidéo et collez-le dans YouTube.
 3. Choisissez le format, la qualité et le dossier de destination.
 4. Cliquez sur **Télécharger sur mon Mac** et gardez la page ouverte jusqu’à la fin.
 
-macOS peut demander l’accès au trousseau pour lire la session Brave et l’autorisation de contrôler le Finder pour mettre les fichiers dans la Corbeille. NUIT ne demande aucun mot de passe dans son interface et n’exporte pas de fichier de cookies.
+macOS peut demander l’accès au trousseau pour lire la session Brave et l’autorisation de contrôler le Finder pour mettre les fichiers dans la Corbeille. YouTube ne demande aucun mot de passe dans son interface et n’exporte pas de fichier de cookies.
 
 Pour une vidéo publique, vous pouvez désactiver **Utiliser ma session YouTube dans Brave**. Si vous avez plusieurs profils Brave, l’option de profil accepte `Default`, `Profile 1`, `Profile 2`, etc. Le chemin du profil est indiqué dans `brave://version`.
 
 ## Versions et mises à jour
 
-La version **1.0** est le point de référence validé. Les versions publiées sont disponibles dans [Releases](https://github.com/oublidee/nuit/releases). Les modifications du code sont visibles dans [l’historique des commits](https://github.com/oublidee/nuit/commits/main/).
+La version **1.0** est le point de référence validé. Les versions publiées sont disponibles dans [Releases](https://github.com/oublidee/YouTube/releases). Les modifications du code sont visibles dans [l’historique des commits](https://github.com/oublidee/YouTube/commits/main/).
 
 ### Mettre à jour l’application
 
-Arrêtez NUIT avec **Ctrl+C**, conservez une copie de votre ancien `index.php`, puis remplacez-le par celui de la nouvelle version téléchargée dans **Releases**. Relancez la commande PHP et rechargez la page dans Brave.
+Arrêtez YouTube avec **Ctrl+C**, conservez une copie de votre ancien `index.php`, puis remplacez-le par celui de la nouvelle version téléchargée dans **Releases**. Relancez la commande PHP et rechargez la page dans Brave.
 
-Le dossier mémorisé et l’historique sont conservés dans le navigateur : utilisez la même adresse et le même profil Brave pour les retrouver.
+Le dossier mémorisé et l’historique sont conservés dans le navigateur : utilisez la même adresse et le même profil Brave pour les retrouver. Le changement de nom utilise un nouvel espace de stockage ; les préférences et l’historique d’une installation antérieure à ce changement ne sont pas repris automatiquement. Les fichiers déjà téléchargés restent dans leur dossier.
 
 Les mises à jour de l’application ne sont pas automatiques. GitHub permet de publier, télécharger et comparer les versions. Pour être averti des nouvelles versions, utilisez **Watch → Custom → Releases** sur le dépôt.
 
@@ -112,22 +112,22 @@ Si YouTube change son fonctionnement et qu’un téléchargement échoue, mettre
 Pour suivre le projet avec Git :
 
 ```sh
-git clone https://github.com/oublidee/nuit.git
-cd nuit
+git clone https://github.com/oublidee/YouTube.git
+cd YouTube
 php -S 127.0.0.1:8787 index.php
 ```
 
-Pour récupérer les modifications de la branche principale, arrêtez NUIT, puis exécutez depuis ce dossier :
+Pour récupérer les modifications de la branche principale, arrêtez YouTube, puis exécutez depuis ce dossier :
 
 ```sh
 git pull --ff-only
 ```
 
-La branche `main` peut contenir des changements plus récents qu’une version publiée. Pour une version précise, privilégiez le téléchargement dans **Releases**. Si vous avez modifié le code localement, sauvegardez vos changements avant de mettre à jour.
+La branche `main` peut contenir des changements plus récents qu’une version publiée. Pour une version précise, privilégiez le téléchargement dans **Releases**. Les anciennes archives conservent le code de leur date de publication ; pour obtenir le nom YouTube dans l’interface, téléchargez la branche `main` comme indiqué plus haut. Si vous avez modifié le code localement, sauvegardez vos changements avant de mettre à jour.
 
 ## Dépannage et sécurité
 
-- **« Address already in use »** : une autre instance utilise le port 8787. Arrêtez-la dans son Terminal avec **Ctrl+C** avant de relancer NUIT.
+- **« Address already in use »** : une autre instance utilise le port 8787. Arrêtez-la dans son Terminal avec **Ctrl+C** avant de relancer YouTube.
 - **Outil introuvable** : vérifiez son installation, les instructions Homebrew et les emplacements indiqués plus haut.
 - **Session Brave inaccessible** : ouvrez Brave et examinez les demandes d’autorisation macOS ; pour une vidéo publique, essayez sans la session Brave.
 - Le serveur doit rester sur **127.0.0.1**. Utilisez exactement la commande avec `index.php` comme routeur et ne l’exposez pas sur Internet.
